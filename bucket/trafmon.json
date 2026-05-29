@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "description": "A tiny, frameless, always-on-top floating widget that shows live network speed.",
+    "homepage": "https://github.com/Schweik7/trafmon",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Schweik7/trafmon/releases/download/v0.2.0/trafmon_0.2.0_x64_portable.zip",
+            "hash": "ab3725f3f16aa7419a32804c23830dbd0045e4407271ec620e47922423d154e8"
+        }
+    },
+    "bin": "trafmon.exe",
+    "shortcuts": [
+        [
+            "trafmon.exe",
+            "trafmon"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Schweik7/trafmon/releases/download/v$version/trafmon_$version_x64_portable.zip"
+            }
+        }
+    }
+}
